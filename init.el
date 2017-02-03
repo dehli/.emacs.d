@@ -130,7 +130,7 @@
 ;;
 ;; (Require 'yaml-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-;; 
+;;
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
@@ -143,6 +143,10 @@
 ;; Add a directory to our load path so that when you `load` things
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
+
+;; Slow scrolling
+(require 'smooth-scroll)
+(smooth-scroll-mode t)
 
 ;; Sets up exec-path-from-shell so that Emacs will use the correct
 ;; environment variables
