@@ -177,3 +177,18 @@
 ;; Editor specific
 (load "setup-helm.el")
 (load "setup-auto-complete.el")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 2)
+ '(package-selected-packages
+   (quote
+    (yasnippet ag helm company tide auto-complete magit tagedit rainbow-delimiters projectile smex ido-ubiquitous markdown-mode less-css-mode web-mode js2-mode cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
