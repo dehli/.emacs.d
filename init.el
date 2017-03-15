@@ -144,10 +144,6 @@
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
 
-;; Slow scrolling
-(require 'smooth-scroll)
-(smooth-scroll-mode t)
-
 ;; Sets up exec-path-from-shell so that Emacs will use the correct
 ;; environment variables
 (load "shell-integration.el")
