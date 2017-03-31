@@ -89,9 +89,6 @@
 
     auto-complete
 
-    ;; TypeScript
-    tide
-
     flycheck
 
     company
@@ -181,7 +178,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (yasnippet ag helm company tide auto-complete magit tagedit rainbow-delimiters projectile smex ido-ubiquitous markdown-mode less-css-mode web-mode js2-mode cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
+    (yasnippet ag helm company auto-complete magit tagedit rainbow-delimiters projectile smex ido-ubiquitous markdown-mode less-css-mode web-mode js2-mode cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

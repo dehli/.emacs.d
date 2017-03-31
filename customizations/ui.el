@@ -7,8 +7,11 @@
 ;; Turn off the menu bar at the top of each frame because it's distracting
 (menu-bar-mode -1)
 
+;; Turn off the toolbar as well
+(tool-bar-mode -1)
+
 ;; Start in full screen mode
-(toggle-frame-fullscreen)
+;; (toggle-frame-fullscreen)
 
 ;; Show line numbers
 (global-linum-mode)

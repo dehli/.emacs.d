@@ -1,9 +1,9 @@
 ;;; ag-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "ag" "ag.el" (22679 22547 0 0))
+;;;### (autoloads nil "ag" "ag.el" (22750 14395 484016 684000))
 ;;; Generated autoloads from ag.el
 
 (autoload 'ag "ag" "\
