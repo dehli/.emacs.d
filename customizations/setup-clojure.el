@@ -1,6 +1,6 @@
-;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Clojure
-;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Enable paredit for Clojure
 (add-hook 'clojure-mode-hook 'enable-paredit-mode)
@@ -15,7 +15,7 @@
 ;; A little more syntax highlighting
 (require 'clojure-mode-extra-font-locking)
 
-;; syntax hilighting for midje
+;; syntax highlighting for midje
 (add-hook 'clojure-mode-hook
           (lambda ()
             (setq inferior-lisp-program "lein repl")
@@ -28,9 +28,9 @@
             (define-clojure-indent (fact 1))
             (define-clojure-indent (facts 1))))
 
-;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Cider
-;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; provides minibuffer documentation for the code you're typing into the repl
 (add-hook 'cider-mode-hook 'eldoc-mode)
