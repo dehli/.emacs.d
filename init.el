@@ -4,8 +4,9 @@
 
 ;; Define package repositories
 (require 'package)
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/"))
+(add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
+
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
@@ -79,9 +80,7 @@
 
     helm
 
-    ;; IRC Client
-    erc
-
+    ;; Searching
     ag
 
     ;; Snippet support
@@ -140,10 +139,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (yasnippet ag helm company auto-complete magit tagedit rainbow-delimiters projectile smex ido-ubiquitous markdown-mode less-css-mode web-mode js2-mode cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
+    (yasnippet ag helm company flycheck auto-complete magit tagedit rainbow-delimiters projectile smex ido-ubiquitous markdown-mode less-css-mode web-mode js2-mode cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
