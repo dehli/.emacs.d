@@ -28,6 +28,9 @@
             (define-clojure-indent (fact 1))
             (define-clojure-indent (facts 1))))
 
+;; This is used for om next
+(setq clojure-indent-style :always-indent)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Cider
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
