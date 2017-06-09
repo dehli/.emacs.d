@@ -84,7 +84,10 @@
     ag
 
     ;; Snippet support
-    yasnippet))
+    yasnippet
+
+    ;; File tree
+    neotree))
 
 ;; This library is used to copying important
 ;; environment variables from the user's shell.
