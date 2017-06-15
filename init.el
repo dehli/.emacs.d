@@ -87,7 +87,10 @@
     yasnippet
 
     ;; File tree
-    neotree))
+    neotree
+
+    ;; Environment variables
+    exec-path-from-shell))
 
 ;; This library is used to copying important
 ;; environment variables from the user's shell.
