@@ -35,6 +35,9 @@
 ;; Cider
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; Add figwheel support for cider
+(setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
+
 ;; provides minibuffer documentation for the code you're typing into the repl
 (add-hook 'cider-mode-hook 'eldoc-mode)
 
