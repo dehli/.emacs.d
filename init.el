@@ -126,7 +126,7 @@
 (load "editing.el")
 
 ;; Hard-to-categorize customizations
-(load "misc.el")
+(load "miscellaneous.el")
 
 ;; For editing lisps
 (load "elisp-editing.el")
@@ -157,3 +157,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'erase-buffer 'disabled nil)
