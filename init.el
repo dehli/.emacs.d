@@ -93,8 +93,7 @@
     exec-path-from-shell
 
     ;; Window management
-    ;;windwow
-    ))
+    windwow))
 
 ;; This library is used to copying important
 ;; environment variables from the user's shell.
@@ -154,7 +153,7 @@
     ("9e54a6ac0051987b4296e9276eecc5dfb67fdcd620191ee553f40a9b6d943e78" "5ee12d8250b0952deefc88814cf0672327d7ee70b16344372db9460e9a0e3ffc" "52588047a0fe3727e3cd8a90e76d7f078c9bd62c0b246324e557dfa5112e0d0c" "7f1263c969f04a8e58f9441f4ba4d7fb1302243355cb9faecb55aec878a06ee9" default)))
  '(package-selected-packages
    (quote
-    (neotree yasnippet ag helm company flycheck auto-complete magit tagedit rainbow-delimiters projectile smex ido-ubiquitous markdown-mode less-css-mode web-mode js2-mode cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
+    (windwow neotree yasnippet ag helm company flycheck auto-complete magit tagedit rainbow-delimiters projectile smex ido-ubiquitous markdown-mode less-css-mode web-mode js2-mode cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
