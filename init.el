@@ -5,8 +5,8 @@
 ;; Define package repositories
 (require 'package)
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
-
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
@@ -90,7 +90,11 @@
     neotree
 
     ;; Environment variables
-    exec-path-from-shell))
+    exec-path-from-shell
+
+    ;; Window management
+    ;;windwow
+    ))
 
 ;; This library is used to copying important
 ;; environment variables from the user's shell.
