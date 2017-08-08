@@ -35,7 +35,7 @@
 (load-theme 'leuven t)
 
 ;; Set font size
-(set-face-attribute 'default nil :height 100)
+(set-face-attribute 'default nil :height 120)
 
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
