@@ -32,7 +32,7 @@
 ;; for a more technical explanation.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
-(load-theme 'leuven t)
+(load-theme 'deeper-blue t)
 
 ;; Set font size
 (set-face-attribute 'default nil :height 120)
