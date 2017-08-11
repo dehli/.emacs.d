@@ -59,3 +59,6 @@
 
 ;; projectile everywhere!
 (projectile-global-mode)
+
+;; Ensure that you don't accidentally close emacs
+(setq confirm-kill-emacs 'y-or-n-p)
