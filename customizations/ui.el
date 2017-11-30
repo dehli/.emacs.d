@@ -113,3 +113,5 @@
 ;; Swap the meta key to option on Mac
 (setq mac-option-modifier 'super)
 (setq mac-command-modifier 'meta)
+
+(global-prettify-symbols-mode 1)
