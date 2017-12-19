@@ -5,4 +5,7 @@
   (exec-path-from-shell-copy-envs
    '("PATH"
      "DATOMIC_USERNAME"
-     "DATOMIC_PASSWORD")))
+     "DATOMIC_PASSWORD"
+     "INSIGHTS_DB_PASSWORD"
+     "XPA_AWS_SES_SECRET_ACCESS_KEY_ID"
+     "XPA_USER_POOL_SECRET_KEY")))
