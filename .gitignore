@@ -12,3 +12,4 @@ network-security.data
 ac-comphist.dat
 elpa/
 session.*
+cache/

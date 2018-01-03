@@ -118,3 +118,8 @@
 ;; (setq mac-command-modifier 'meta)
 
 (global-prettify-symbols-mode 1)
+
+;; This is used for using mouse in terminal mode
+(xterm-mouse-mode 1)
+(global-set-key [mouse-4] 'scroll-down-line)
+(global-set-key [mouse-5] 'scroll-up-line)
