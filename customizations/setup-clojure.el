@@ -60,9 +60,6 @@
 ;; Use clojure mode for other extensions
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
-(add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
-(add-to-list 'auto-mode-alist '("lein-env" . enh-ruby-mode))
-
 
 ;; key bindings
 ;; these help me out with the way I usually develop web app
@@ -89,3 +86,5 @@
      (define-key clojure-mode-map (kbd "C-M-r") 'cider-refresh)
      (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
      (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)))
+
+(setq cider-default-cljs-repl 'node)
