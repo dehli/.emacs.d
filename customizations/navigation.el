@@ -58,7 +58,9 @@
 (global-set-key (kbd "M-x") 'smex)
 
 ;; projectile everywhere!
-(projectile-mode)
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 ;; Ensure that you don't accidentally close emacs
 (setq confirm-kill-emacs 'y-or-n-p)
