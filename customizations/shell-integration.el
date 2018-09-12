@@ -3,12 +3,10 @@
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize)
   (exec-path-from-shell-copy-envs
-   '("PATH"
-     "DATOMIC_USERNAME"
-     "DATOMIC_PASSWORD"
-     "INSIGHTS_DB_PASSWORD"
-     "XPA_AWS_SES_SECRET_ACCESS_KEY_ID"
-     "XPA_USER_POOL_SECRET_KEY")))
+   '("PATH")))
+
+(setq shell-file-name "bash")
+(setq shell-command-switch "-ic")
 
 ;; If there's an .env at the root of the Git project, then source it
 (let* ((project-dir (car (split-string (shell-command-to-string
