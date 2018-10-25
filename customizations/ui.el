@@ -10,6 +10,9 @@
 ;; Turn off the toolbar as well
 (tool-bar-mode -1)
 
+;; Truncate long lines
+(setq-default truncate-lines t)
+
 ;; Start in full screen mode
 ;; (toggle-frame-fullscreen)
 
