@@ -5,16 +5,5 @@
   (exec-path-from-shell-copy-envs
    '("PATH")))
 
-;; If there's an .env at the root of the Git project, then source it
-(let* ((project-dir (car (split-string (shell-command-to-string
-                                        "git rev-parse --show-toplevel"))))
-       (env-content (shell-command-to-string
-                     (concat "FILE=" project-dir "/.env && test -f $FILE && cat $FILE")))
-       (vars (split-string env-content)))
-
-  (dolist (elt vars)
-    (let ((value (split-string elt "=")))
-      (setenv (nth 0 value) (nth 1 value)))))
-
 (setq shell-file-name "bash")
 (setq shell-command-switch "-ic")
