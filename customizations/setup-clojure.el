@@ -87,5 +87,6 @@
      (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
      (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)))
 
-;; A custom macro I use often
+;; Some macros I use often
+(put-clojure-indent 'async 1)
 (put-clojure-indent 'go-try 0)
