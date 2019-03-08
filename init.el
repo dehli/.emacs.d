@@ -1,5 +1,4 @@
 (setq warning-minimum-level :emergency)
-
 ;; Define package repositories
 (require 'package)
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
@@ -46,8 +45,6 @@
 (load "ui.el")
 (load "editing.el")
 (load "miscellaneous.el")
-
-(load "elisp-editing.el")
 
 (load "setup-clojure.el")
 (load "setup-js.el")
