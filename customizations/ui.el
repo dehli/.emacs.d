@@ -19,7 +19,7 @@
 
 ;; Set default font
 (when (window-system)
-  (set-default-font "Fira Code"))
+  (set-frame-font "Fira Code"))
 
 ;; Set ligatures
 (defun toggle-ligatures ()
@@ -53,25 +53,24 @@
 
 (toggle-ligatures)
 
-;; These settings relate to how emacs interacts with your operating system
 (setq ;; makes killing/yanking interact with the clipboard
-      x-select-enable-clipboard t
+ select-enable-clipboard t
 
-      ;; I'm actually not sure what this does but it's recommended?
-      x-select-enable-primary t
+ ;; I'm actually not sure what this does but it's recommended?
+ select-enable-primary t
 
-      ;; Save clipboard strings into kill ring before replacing them.
-      ;; When one selects something in another program to paste it into Emacs,
-      ;; but kills something in Emacs before actually pasting it,
-      ;; this selection is gone unless this variable is non-nil
-      save-interprogram-paste-before-kill t
+ ;; Save clipboard strings into kill ring before replacing them.
+ ;; When one selects something in another program to paste it into Emacs,
+ ;; but kills something in Emacs before actually pasting it,
+ ;; this selection is gone unless this variable is non-nil
+ save-interprogram-paste-before-kill t
 
-      ;; Shows all options when running apropos. For more info,
-      ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Apropos.html
-      apropos-do-all t
+ ;; Shows all options when running apropos. For more info,
+ ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Apropos.html
+ apropos-do-all t
 
-      ;; Mouse yank commands yank at point instead of at click.
-      mouse-yank-at-point t)
+ ;; Mouse yank commands yank at point instead of at click.
+ mouse-yank-at-point t)
 
 ;; No cursor blinking
 (blink-cursor-mode 0)
@@ -94,3 +93,6 @@
 (xterm-mouse-mode 1)
 (global-set-key [mouse-4] 'scroll-down-line)
 (global-set-key [mouse-5] 'scroll-up-line)
+
+;; Show column number
+(column-number-mode 1)
