@@ -19,3 +19,11 @@
 
 (put 'erase-buffer 'disabled nil)
 (global-flycheck-mode)
+
+;; Insert random uuid (credit to @oconn)
+(defun insert-random-uuid ()
+  (interactive)
+  (let ((uuid (shell-command-to-string "uuidgen")))
+    (insert "\"" (string-trim-right (downcase uuid)) "\"")))
+
+(global-set-key (kbd "C-c M-u") 'insert-random-uuid)
