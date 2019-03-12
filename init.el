@@ -27,13 +27,13 @@
 
     ;; General packages
     ag
-    ido-ubiquitous
-    smex
-    projectile
-    flycheck
     company
+    exec-path-from-shell
+    flycheck
     helm
-    exec-path-from-shell))
+    ido-ubiquitous
+    projectile
+    smex))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -53,7 +53,7 @@
 (load "setup-js.el")
 
 (load "setup-helm.el")
-(load "setup-auto-complete.el")
+(load "clipboard.el")
 
 ;; Variables
 
