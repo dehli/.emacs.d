@@ -19,8 +19,11 @@
     rainbow-delimiters
 
     ;; Web Dev
+    js2-mode
     web-mode
     yaml-mode
+    indium
+    tagedit
 
     ;; General packages
     ag
