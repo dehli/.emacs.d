@@ -1,3 +1,5 @@
+(require 'paredit)
+
 (defvar copy-cmd
   (if (eq system-type 'darwin)
       "pbcopy"
@@ -22,5 +24,12 @@
   (kill-region beg end region)
   (copy-kill-ring))
 
+(defun paredit-kill-copy ()
+  (interactive)
+  (paredit-kill)
+  (copy-kill-ring))
+
 (global-set-key (kbd "C-k") 'kill-line-copy)
 (global-set-key (kbd "C-w") 'kill-region-copy)
+
+(define-key paredit-mode-map (kbd "C-k") 'paredit-kill-copy)
