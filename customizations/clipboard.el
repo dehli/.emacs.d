@@ -1,5 +1,5 @@
 (defvar copy-cmd
-  (if (memq window-system '(mac ns x))
+  (if (eq system-type 'darwin)
       "pbcopy"
     "xsel -i -b"))
 
