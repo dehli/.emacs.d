@@ -27,3 +27,5 @@
     (insert "\"" (string-trim-right (downcase uuid)) "\"")))
 
 (global-set-key (kbd "C-c M-u") 'insert-random-uuid)
+
+(setq backup-directory-alist `(("." . "~/.saves")))
