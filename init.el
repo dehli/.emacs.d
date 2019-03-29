@@ -11,12 +11,15 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(;; Clojure packages
-    cider
-    clojure-mode
-    clojure-mode-extra-font-locking
-    paredit
-    rainbow-delimiters
+  '(;; General packages
+    ag
+    company
+    exec-path-from-shell
+    flycheck
+    helm
+    ido-ubiquitous
+    projectile
+    smex
 
     ;; Web Dev
     js2-mode
@@ -25,15 +28,13 @@
     indium
     tagedit
 
-    ;; General packages
-    ag
-    company
-    exec-path-from-shell
-    flycheck
-    helm
-    ido-ubiquitous
-    projectile
-    smex))
+    ;; Clojure packages
+    flycheck-joker
+    cider
+    clojure-mode
+    clojure-mode-extra-font-locking
+    paredit
+    rainbow-delimiters))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -64,24 +65,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (cider-decompile
-     cider-eval-sexp-fu
-     yaml-mode
-     ag
-     helm
-     company
-     flycheck
-     auto-complete
-     rainbow-delimiters
-     projectile
-     smex
-     ido-ubiquitous
-     web-mode
-     cider
-     clojure-mode-extra-font-locking
-     clojure-mode
-     paredit
-     exec-path-from-shell))))
+    (cider-decompile cider-eval-sexp-fu yaml-mode ag helm company flycheck auto-complete rainbow-delimiters projectile smex ido-ubiquitous web-mode cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
