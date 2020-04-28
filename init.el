@@ -20,6 +20,7 @@
     ido-ubiquitous
     projectile
     smex
+    vterm
 
     ;; Web Dev
     js2-mode
@@ -65,7 +66,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (cider-decompile cider-eval-sexp-fu yaml-mode ag helm company flycheck auto-complete rainbow-delimiters projectile smex ido-ubiquitous web-mode cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
+    (vterm cider-decompile cider-eval-sexp-fu yaml-mode ag helm company flycheck auto-complete rainbow-delimiters projectile smex ido-ubiquitous web-mode cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
