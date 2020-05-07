@@ -1,4 +1,4 @@
-;;(setq warning-minimum-level :emergency)
+(setq warning-minimum-level :emergency)
 
 (add-to-list 'load-path "~/.emacs.d/customizations")
 

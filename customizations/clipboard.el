@@ -6,13 +6,11 @@
     "xsel -i -b"))
 
 (defun copy-kill-ring ()
-  (let ((cmd (format "echo %s | %s"
-                     (prin1-to-string
-                      (substring-no-properties
-                       (car kill-ring)))
-                     copy-cmd)))
-
-    (shell-command cmd)))
+  (shell-command (format "echo %s | %s"
+                         (shell-quote-argument
+                          (substring-no-properties
+                           (car kill-ring)))
+                         copy-cmd)))
 
 (defun kill-line-copy ()
   (interactive)
