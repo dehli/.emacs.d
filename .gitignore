@@ -15,3 +15,5 @@ session.*
 cache/
 recentf
 transient
+straight/build*
+straight/repos
