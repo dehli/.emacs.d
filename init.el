@@ -9,4 +9,5 @@
 (load "miscellaneous.el")
 (load "setup-clojure.el")
 (load "setup-helm.el")
+(load "setup-web.el")
 (load "clipboard.el")
