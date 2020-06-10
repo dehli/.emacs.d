@@ -21,6 +21,7 @@
     projectile
     smex
     vterm
+    yaml-mode
 
     ;; Clojure packages
     flycheck-joker
