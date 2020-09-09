@@ -24,7 +24,7 @@
     yaml-mode
 
     ;; Clojure packages
-    flycheck-joker
+    flycheck-clj-kondo
     cider
     clojure-mode
     clojure-mode-extra-font-locking

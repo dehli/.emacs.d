@@ -10,7 +10,7 @@
  ("emacsmirror-mirror" . "8fd63d29a4376d9cebe34a2e217fe150e8b82ceb")
  ("epl" . "78ab7a85c08222cd15582a298a364774e3282ce6")
  ("flycheck" . "806f2a8c21231a0dddd0a48d27fa4021729ee365")
- ("flycheck-joker" . "93576295fef7a749bf779eeece5edd85e21868e2")
+ ("flycheck-clj-kondo" . "5472c26ffdf754a0661357564874ffd4f8598805")
  ("gnu-elpa-mirror" . "87d1146e3dbbe05ade60eb265bf50490aecbe1e0")
  ("helm" . "76fb819030694174c19e4ebec0ecf7952f15768a")
  ("ido-completing-read-plus" . "b9ca2566b867464c25b720e2148d240961c110e7")

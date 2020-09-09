@@ -91,4 +91,4 @@
 (put-clojure-indent 'async 1)
 (put-clojure-indent 'go-try 0)
 
-(require 'flycheck-joker)
+(require 'flycheck-clj-kondo)
