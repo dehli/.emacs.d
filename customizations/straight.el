@@ -18,6 +18,7 @@
     flycheck
     helm
     ido-completing-read+
+    magit
     projectile
     smex
     vterm
@@ -28,6 +29,7 @@
     cider
     clojure-mode
     clojure-mode-extra-font-locking
+    clj-refactor
     paredit
     rainbow-delimiters))
 

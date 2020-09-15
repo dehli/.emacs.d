@@ -8,6 +8,10 @@ This is my personal Clojure preferences folder. I mostly got it from the config 
 
 I'm just now learning how to use emacs, so if you find yourself here and have suggestions feel free to reach out!
 
+## Requirements
+
+- `clj-kondo` must be on your $PATH
+
 ## Using Straight
 
 ```
