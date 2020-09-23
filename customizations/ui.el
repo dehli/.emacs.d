@@ -62,3 +62,6 @@
 
 ;; Show column number
 (column-number-mode 1)
+
+;; On initial load, make sure it's maximized
+(toggle-frame-maximized)

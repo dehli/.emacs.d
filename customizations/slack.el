@@ -17,7 +17,7 @@
   (slack-register-team
    :name "ArcheMedX"
    :default t
-   :token (getenv "SLACK_TOKEN")
+   :token (exec-path-from-shell-copy-env "SLACK_TOKEN")
    :full-and-display-names t))
 
 (use-package helm-slack

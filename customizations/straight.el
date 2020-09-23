@@ -28,6 +28,7 @@
     auto-complete
     company
     el-patch
+    exec-path-from-shell
     flycheck
     helm
     ido-completing-read+
@@ -53,5 +54,8 @@
   (straight-use-package p))
 
 (setq straight-use-package-by-default t)
+
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 
 ;;; straight.el ends here

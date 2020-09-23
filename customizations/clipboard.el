@@ -1,5 +1,3 @@
-(require 'paredit)
-
 (defvar copy-cmd
   (if (eq system-type 'darwin)
       "pbcopy"
