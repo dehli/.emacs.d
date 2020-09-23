@@ -1,3 +1,10 @@
+;;; straight.el --- Straight package manager initialization
+
+;;; Commentary:
+;;
+
+;;; Code:
+
 (defvar bootstrap-version)
 (let ((bootstrap-file
        (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
@@ -11,27 +18,40 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
+;; Workaround to get nadvice working
+(straight--package-built-in-p 'nadvice)
+(puthash 'nadvice t straight--cached-built-in-packages)
+
 (defvar my-packages
   '(;; General packages
     ag
+    auto-complete
     company
+    el-patch
     flycheck
     helm
     ido-completing-read+
     magit
     projectile
     smex
+    use-package
     vterm
     yaml-mode
+    yasnippet
 
     ;; Clojure packages
-    flycheck-clj-kondo
     cider
+    clj-refactor
     clojure-mode
     clojure-mode-extra-font-locking
-    clj-refactor
+    clojure-snippets
+    flycheck-clj-kondo
     paredit
     rainbow-delimiters))
 
 (dolist (p my-packages)
   (straight-use-package p))
+
+(setq straight-use-package-by-default t)
+
+;;; straight.el ends here

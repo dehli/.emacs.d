@@ -4,6 +4,7 @@ places
 .recentf
 ido.last
 cider-history
+emojis/
 projectile-bookmarks.eld
 projectile.cache
 auto-save-list
@@ -14,6 +15,7 @@ elpa/
 session.*
 cache/
 recentf
+request/
 transient
 straight/build*
 straight/modified

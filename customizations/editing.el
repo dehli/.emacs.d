@@ -2,6 +2,8 @@
 
 ;; Highlight matching parens
 (show-paren-mode 1)
+(yas-global-mode 1)
+(global-flycheck-mode)
 
 ;; Favor regex searching
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
@@ -18,7 +20,6 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (put 'erase-buffer 'disabled nil)
-(global-flycheck-mode)
 
 ;; Insert random uuid (credit to @oconn)
 (defun insert-random-uuid ()
@@ -32,5 +33,3 @@
 
 (when (string= system-type "darwin")
   (setq dired-use-ls-dired nil))
-
-(global-flycheck-mode)

@@ -1,3 +1,10 @@
+;;; init.el --- Initialization file for Emacs
+
+;;; Commentary:
+;;
+
+;;; Code:
+
 (setq warning-minimum-level :emergency)
 
 (add-to-list 'load-path "~/.emacs.d/customizations")
@@ -11,3 +18,6 @@
 (load "setup-helm.el")
 (load "setup-web.el")
 (load "clipboard.el")
+(load "slack.el")
+
+;;; init.el ends here
