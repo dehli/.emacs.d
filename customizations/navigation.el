@@ -1,5 +1,10 @@
+;;; navitation.el --- Navigation configuration
+
+;;; Commentary:
 ;; These customizations make it easier for you to navigate files,
 ;; switch buffers, and choose options from the minibuffer.
+
+;;; Code:
 
 ;; http://www.emacswiki.org/emacs/InteractivelyDoThings
 (ido-mode t)
@@ -35,3 +40,5 @@
 
 ;; Ensure that you don't accidentally close emacs
 (setq confirm-kill-emacs 'y-or-n-p)
+
+;;; navigation.el ends here

@@ -21,7 +21,7 @@
    :full-and-display-names t))
 
 (use-package helm-slack
-  :straight (el-patch :type git :host github :repo "yuya373/helm-slack")
+  :straight (helm-slack :type git :host github :repo "yuya373/helm-slack")
   :after (slack))
 
 (use-package alert

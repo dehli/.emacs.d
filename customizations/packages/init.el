@@ -1,22 +1,11 @@
-;;; straight.el --- Straight package manager initialization
+;;; init.el --- Initializess packages
 
 ;;; Commentary:
 ;;
 
 ;;; Code:
 
-(defvar bootstrap-version)
-(let ((bootstrap-file
-       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
-      (bootstrap-version 5))
-  (unless (file-exists-p bootstrap-file)
-    (with-current-buffer
-        (url-retrieve-synchronously
-         "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
-         'silent 'inhibit-cookies)
-      (goto-char (point-max))
-      (eval-print-last-sexp)))
-  (load bootstrap-file nil 'nomessage))
+(load "packages/bootstrap-straight.el")
 
 ;; Workaround to get nadvice working
 (straight--package-built-in-p 'nadvice)
@@ -58,4 +47,4 @@
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
-;;; straight.el ends here
+;;; init.el ends here
