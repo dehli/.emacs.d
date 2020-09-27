@@ -8,6 +8,7 @@
 (add-to-list 'load-path "~/.emacs.d/customizations")
 
 (load "packages/init.el")
+(load "markdown.el")
 (load "navigation.el")
 (load "ui.el")
 (load "editing.el")

@@ -1,16 +1,14 @@
 # .emacs.d
-Emacs config 😎
 
 ## About
 
-This is my personal Clojure preferences folder. I mostly got it from the config provided with:
-[Clojure for the Brave and True](http://www.braveclojure.com/basic-emacs/).
-
-I'm just now learning how to use emacs, so if you find yourself here and have suggestions feel free to reach out!
+This is my personal Clojure preferences folder.
 
 ## Requirements
 
 - `clj-kondo` must be on your $PATH
+- `brew install ag` (for searching)
+- `brew install pandoc` (for Markdown mode)
 
 ## Using Straight
 
