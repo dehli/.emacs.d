@@ -18,6 +18,5 @@
 (load "setup-web.el")
 (load "clipboard.el")
 (load "slack.el")
-(load "typescript.el")
 
 ;;; init.el ends here
