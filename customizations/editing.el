@@ -1,4 +1,9 @@
-;; Customizations relating to editing a buffer.
+;;; editing.el -- Customizations relating to editing a buffer.
+
+;;; Commentary:
+;;
+
+;;; Code:
 
 ;; Highlight matching parens
 (show-paren-mode 1)
@@ -33,3 +38,18 @@
 
 (when (string= system-type "darwin")
   (setq dired-use-ls-dired nil))
+
+;; Configure HideShow
+(defun hideshow-mode-- nil
+  "This function is used to enable hs-mode and hide all blocks."
+  (hs-org/minor-mode)
+  (hs-hide-all))
+
+(use-package hideshow-org
+  :init
+  (add-hook 'clojure-mode-hook #'hideshow-mode--)
+  (add-hook 'tide-mode-hook #'hideshow-mode--))
+
+(provide 'editing)
+
+;;; editing.el ends here

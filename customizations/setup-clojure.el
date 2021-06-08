@@ -18,14 +18,8 @@
 (require 'paredit)
 (require 'use-package)
 
-(use-package lisp-code-fold
-  :straight (lisp-code-fold :type git
-                            :host github
-                            :repo "oconn/lisp-code-fold.el"))
-
 (add-hook 'clojure-mode-hook
           (lambda ()
-            (lisp-code-fold-init)
             (clj-refactor-mode 1)
             (yas-minor-mode 1) ; for adding require/use/import statements
             ;; This choice of keybinding leaves cider-macroexpand-1 unbound
