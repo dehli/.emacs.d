@@ -1,8 +1,10 @@
 ;;; editing.el -- Customizations relating to editing a buffer.
-
+;;
 ;;; Commentary:
 ;;
-
+;; Contains configuration that makes editing of my
+;; buffers easier.
+;;
 ;;; Code:
 
 ;; Highlight matching parens

@@ -18,5 +18,6 @@
 (load "setup-web.el")
 (load "clipboard.el")
 (load "slack.el")
+(load "projects.el")
 
 ;;; init.el ends here
