@@ -51,7 +51,7 @@
   :init
   (add-hook 'clojure-mode-hook #'hideshow-mode--)
   (add-hook 'emacs-lisp-mode-hook #'hideshow-mode--)
-  (add-hook 'javascript-mode-hook #'hideshow-mode--)
+  (add-hook 'js-mode-hook #'hideshow-mode--)
   (add-hook 'tide-mode-hook #'hideshow-mode--))
 
 (provide 'editing)
