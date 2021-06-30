@@ -21,7 +21,7 @@
   (setq cider-repl-display-help-banner nil)
   (setq cider-shadow-default-options "server-dev")
   (cider-jack-in-cljs `(:project-dir ,(kyber-path "/server")
-                                     :cljs-repl-type shadow)))
+                        :cljs-repl-type shadow)))
 
 (defun kyber-connect-node ()
   "Start vterm process and connect to KYBER."
