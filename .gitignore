@@ -17,7 +17,8 @@ cache/
 recentf
 request/
 transient
-straight/build*
+straight/build/
+straight/build-cache.el
 straight/modified
 straight/repos
 projects

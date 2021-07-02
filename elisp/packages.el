@@ -1,11 +1,9 @@
-;;; init.el --- Initializess packages
+;;; packages.el --- Initializes packages
 
 ;;; Commentary:
 ;;
 
 ;;; Code:
-
-(load "packages/bootstrap-straight.el")
 
 ;; Workaround to get nadvice working
 (straight--package-built-in-p 'nadvice)
@@ -17,9 +15,9 @@
     auto-complete
     company
     el-patch
+    esup
     exec-path-from-shell
     flycheck
-    helm
     ido-completing-read+
     magit
     paredit
@@ -39,4 +37,5 @@
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
-;;; init.el ends here
+(provide 'packages)
+;;; packages.el ends here

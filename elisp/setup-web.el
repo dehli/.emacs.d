@@ -5,6 +5,8 @@
 
 ;;; Code:
 
+(require 'use-package)
+
 (use-package tide
   :init
   (setq typescript-indent-level 2))
@@ -36,4 +38,5 @@
             (when (string-equal "tsx" (file-name-extension buffer-file-name))
               (setup-tide-mode))))
 
+(provide 'setup-web)
 ;;; setup-web.el ends here

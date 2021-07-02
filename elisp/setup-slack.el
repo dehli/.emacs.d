@@ -1,4 +1,4 @@
-;;; slack.el --- Initialization file for Slack
+;;; setup-slack.el --- Initialization file for Slack
 ;; Setup Emacs Slack
 
 
@@ -6,6 +6,8 @@
 ;; https://github.com/yuya373/emacs-slack
 
 ;;; Code:
+
+(require 'use-package)
 
 (use-package slack
   :commands (slack-start)
@@ -29,4 +31,5 @@
   :init
   (setq alert-default-style 'notifier))
 
-;;; slack.el ends here
+(provide 'setup-slack)
+;;; setup-slack.el ends here

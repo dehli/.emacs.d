@@ -12,12 +12,12 @@
 (yas-global-mode 1)
 (global-flycheck-mode)
 
+;; Don't use hard tabs
+(setq-default indent-tabs-mode nil)
+
 ;; Favor regex searching
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
 (global-set-key (kbd "C-r") 'isearch-backward-regexp)
-
-;; Don't use hard tabs
-(setq-default indent-tabs-mode nil)
 
 (setq auto-save-default nil)
 
@@ -38,22 +38,5 @@
 
 (setq backup-directory-alist `(("." . "~/.saves")))
 
-(when (string= system-type "darwin")
-  (setq dired-use-ls-dired nil))
-
-;; Configure HideShow
-(defun hideshow-mode-- nil
-  "This function is used to enable hs-mode and hide all blocks."
-  (hs-org/minor-mode)
-  (hs-hide-all))
-
-(use-package hideshow-org
-  :init
-  (add-hook 'clojure-mode-hook #'hideshow-mode--)
-  (add-hook 'emacs-lisp-mode-hook #'hideshow-mode--)
-  (add-hook 'js-mode-hook #'hideshow-mode--)
-  (add-hook 'tide-mode-hook #'hideshow-mode--))
-
 (provide 'editing)
-
 ;;; editing.el ends here
