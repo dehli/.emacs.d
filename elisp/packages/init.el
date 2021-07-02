@@ -22,22 +22,14 @@
     helm
     ido-completing-read+
     magit
+    paredit
     projectile
+    rainbow-delimiters
     smex
     use-package
     vterm
     yaml-mode
-    yasnippet
-
-    ;; Clojure packages
-    cider
-    clj-refactor
-    clojure-mode
-    clojure-mode-extra-font-locking
-    clojure-snippets
-    flycheck-clj-kondo
-    paredit
-    rainbow-delimiters))
+    yasnippet))
 
 (dolist (p my-packages)
   (straight-use-package p))
