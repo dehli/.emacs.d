@@ -30,7 +30,8 @@
 
     (vterm)
 
-    ;; We send the env vars separately so we can easily modify them via the shell's history
+    ;; Env vars are sent separately so that you can kill the node process
+    ;; and easily make changes to an individual variable if you wanted to.
     (vterm-send-string (concat "export AWS_PROFILE=" (kyber-stack-name->aws-profile stack-name)))
     (vterm-send-return)
     (vterm-send-string (concat "export STACK_NAME=" stack-name))
@@ -50,6 +51,8 @@
   (cider-jack-in-cljs `(:cljs-repl-type shadow
                         :project-dir ,(kyber-path "/server")))
 
+  ;; Give shadow enough time to compile. Ideally this would be triggered
+  ;; from an event, but I haven't learned enough about emacs/cider.
   (run-at-time "30 sec" nil #'kyber-connect-node))
 
 (provide 'kyber)
