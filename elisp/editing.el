@@ -11,6 +11,7 @@
 (show-paren-mode 1)
 (yas-global-mode 1)
 (global-flycheck-mode)
+(setq flycheck-emacs-lisp-load-path 'inherit)
 
 ;; Don't use hard tabs
 (setq-default indent-tabs-mode nil)

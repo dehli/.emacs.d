@@ -6,13 +6,12 @@
 
 (use-package helm
   :init
-  (global-set-key (kbd "M-x") 'helm-M-x)
-  (setq helm-M-x-fuzzy-match t
-        helm-split-window-inside-p t)
+  (setq helm-split-window-inside-p t)
 
-  (helm-mode 1)
+  :bind (("M-x" . 'helm-M-x))
 
   :config
+  (helm-mode 1)
   (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
   (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
   (define-key helm-map (kbd "C-z")  'helm-select-action))

@@ -9,16 +9,18 @@
 
 (load "bootstrap-straight.el")
 (load "packages.el")
-(load "navigation.el")
-(load "ui.el")
-(load "setup-hideshow.el")
-(load "editing.el")
-(load "miscellaneous.el")
+
 (load "setup-clojure.el")
 (load "setup-helm.el")
+(load "setup-hideshow.el")
 (load "setup-slack.el")
 (load "setup-web.el")
+
 (load "clipboard.el")
-(load "projects.el")
+(load "editing.el")
+(load "miscellaneous.el")
+(load "navigation.el")
+(load "kyber.el")
+(load "ui.el")
 
 ;;; init.el ends here
