@@ -5,7 +5,7 @@
 
 ;;; Code:
 
-(add-to-list 'load-path "~/.emacs.d/customizations")
+(add-to-list 'load-path "~/.emacs.d/elisp/")
 
 (load "packages/init.el")
 (load "markdown.el")
