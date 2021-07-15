@@ -5,10 +5,6 @@
 
 ;;; Code:
 
-;; Workaround to get nadvice working
-(straight--package-built-in-p 'nadvice)
-(puthash 'nadvice t straight--cached-built-in-packages)
-
 (defvar my-packages
   '(;; General packages
     ag
