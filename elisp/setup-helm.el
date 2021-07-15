@@ -8,13 +8,14 @@
   :init
   (setq helm-split-window-inside-p t)
 
-  :bind (("M-x" . 'helm-M-x))
+  :bind
+  (("M-x" . 'helm-M-x))
+
+  :preface
+  (require 'helm-config)
 
   :config
-  (helm-mode 1)
-  (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
-  (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
-  (define-key helm-map (kbd "C-z")  'helm-select-action))
+  (helm-mode 1))
 
 (provide 'setup-helm)
 ;;; setup-helm.el ends here
