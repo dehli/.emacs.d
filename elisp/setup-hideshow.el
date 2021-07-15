@@ -4,17 +4,11 @@
 
 (require 'use-package)
 
-(defun setup-hs-mode-- nil
-  "This function is used to enable hs-mode and hide all blocks."
-  (hs-org/minor-mode)
-  (hs-hide-all))
-
 (use-package hideshow-org
-  :init
-  (add-hook 'clojure-mode-hook #'setup-hs-mode--)
-  (add-hook 'emacs-lisp-mode-hook #'setup-hs-mode--)
-  (add-hook 'js-mode-hook #'setup-hs-mode--)
-  (add-hook 'tide-mode-hook #'setup-hs-mode--))
+  :commands (hs-org/minor-mode hs-hide-all)
+  :hook ((prog-mode . (lambda ()
+                        (hs-org/minor-mode)
+                        (hs-hide-all)))))
 
 (provide 'setup-hideshow)
 ;;; setup-hideshow.el ends here
