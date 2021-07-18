@@ -14,7 +14,6 @@
     esup
     exec-path-from-shell
     flycheck
-    ido-completing-read+
     magit
     paredit
     projectile
@@ -22,8 +21,7 @@
     smex
     use-package
     vterm
-    yaml-mode
-    yasnippet))
+    yaml-mode))
 
 (dolist (p my-packages)
   (straight-use-package p))

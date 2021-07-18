@@ -1,4 +1,4 @@
-;;; Kyber.el -- Customizations related to the Kyber project.
+;;; kyber.el -- Customizations related to the Kyber project.
 ;;
 ;;; Commentary:
 ;;
