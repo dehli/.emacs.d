@@ -5,6 +5,8 @@
 
 ;;; Code:
 
+(require 'straight)
+
 (defvar my-packages
   '(;; General packages
     ag

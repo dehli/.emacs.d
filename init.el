@@ -20,7 +20,6 @@
 (load "clipboard.el")
 (load "editing.el")
 (load "miscellaneous.el")
-(load "navigation.el")
 (load "kyber.el")
 (load "ui.el")
 
