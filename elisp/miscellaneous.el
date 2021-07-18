@@ -1,3 +1,13 @@
+;;; miscellaneous.el --- Misc. customizations of emacs
+;;
+;;; Commentary:
+;;
+;;; Code:
+
+(require 'projectile)
+(require 'smex)
+(require 'vterm)
+
 ;; Changes all yes/no questions to y/n type
 (fset 'yes-or-no-p 'y-or-n-p)
 
@@ -20,3 +30,6 @@
 
 ;; Ensure that you don't accidentally close emacs
 (setq confirm-kill-emacs 'y-or-n-p)
+
+(provide 'miscellaneous)
+;;; miscellaneous.el ends here

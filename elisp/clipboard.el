@@ -45,4 +45,5 @@ Passes BEG, END, and optionally REGION to built in `kill-region`."
 
 (define-key paredit-mode-map (kbd "C-k") 'paredit-kill-copy)
 
+(provide 'clipboard)
 ;;; clipboard.el ends here
