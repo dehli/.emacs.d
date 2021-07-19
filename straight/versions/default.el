@@ -34,7 +34,7 @@
  ("let-alist" . "6708ec0b2e6dff80ff5b64698aa009d9070a2ed2")
  ("log4e" . "7df0c1ff4656f8f993b87064b1567618eadb5546")
  ("magit" . "bf9cc19a3287f6a3cc5c1836312f0d18b38b6e45")
- ("melpa" . "ec597d3ee2b2783fa4aefcc894a7cbc27e55b718")
+ ("melpa" . "3ac69fa433b31d7a1a171e76458c9678f851b44d")
  ("multiple-cursors.el" . "616fbdd3696f99d85660ad57ebbb0c44d6c7f426")
  ("oauth2" . "8e850bc14ab4b9253e37c7333dd08e8eda0c9620")
  ("paredit" . "8330a41e8188fe18d3fa805bb9aa529f015318e8")
@@ -57,5 +57,6 @@
  ("web-mode" . "8ef47935d638902ba35a557cae5edd6ab6ab1346")
  ("with-editor" . "5519b6a67ecd66865b4fdd5447425eee900c54f4")
  ("yaml-mode" . "3a57058468211f3cb18e71aecc630dcacb87636b")
- ("yasnippet" . "5cbdbf0d2015540c59ed8ee0fcf4788effdf75b6"))
+ ("yasnippet" . "5cbdbf0d2015540c59ed8ee0fcf4788effdf75b6")
+ ("yasnippet-snippets" . "be823d7e1a1a46454d60a9f3dabb16b68b5dd853"))
 :beta

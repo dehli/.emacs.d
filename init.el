@@ -16,6 +16,7 @@
 (load "setup-ido.el")
 (load "setup-slack.el")
 (load "setup-web.el")
+(load "setup-yasnippet.el")
 
 (load "clipboard.el")
 (load "editing.el")

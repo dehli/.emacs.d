@@ -23,4 +23,5 @@
 ;; Also include recent buffers
 (setq ido-use-virtual-buffers t)
 
+(provide 'setup-ido)
 ;;; setup-ido.el ends here

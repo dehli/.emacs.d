@@ -8,8 +8,10 @@
 ;;; Code:
 
 ;; Highlight matching parens
+
+(require 'flycheck)
+
 (show-paren-mode 1)
-(yas-global-mode 1)
 (global-flycheck-mode)
 (setq flycheck-emacs-lisp-load-path 'inherit)
 
@@ -29,13 +31,11 @@
 
 (put 'erase-buffer 'disabled nil)
 
-;; Insert random uuid (credit to @oconn)
 (defun insert-random-uuid ()
+  "Insert a random uuid into the current buffer (credit to @oconn)."
   (interactive)
   (let ((uuid (shell-command-to-string "uuidgen")))
     (insert "\"" (string-trim-right (downcase uuid)) "\"")))
-
-(global-set-key (kbd "C-c M-u") 'insert-random-uuid)
 
 (setq backup-directory-alist `(("." . "~/.saves")))
 
