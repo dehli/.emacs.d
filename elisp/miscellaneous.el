@@ -5,7 +5,6 @@
 ;;; Code:
 
 (require 'ag)
-(require 'projectile)
 (require 'smex)
 (require 'vterm)
 
@@ -25,16 +24,12 @@
 (setq smex-save-file (concat user-emacs-directory ".smex-items"))
 (smex-initialize)
 
-;; projectile everywhere!
-(projectile-mode +1)
-(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
-
 ;; Ensure that you don't accidentally close emacs
 (setq confirm-kill-emacs 'y-or-n-p)
 
 (setq ag-arguments '("--hidden" "--smart-case" "--stats"))
 (setq ag-highlight-search t)
-(setq ag-reuse-window 't)
+(setq ag-reuse-window t)
 
 (provide 'miscellaneous)
 ;;; miscellaneous.el ends here

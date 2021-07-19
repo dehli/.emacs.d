@@ -14,6 +14,7 @@
 (load "setup-helm.el")
 (load "setup-hideshow.el")
 (load "setup-ido.el")
+(load "setup-projectile.el")
 (load "setup-slack.el")
 (load "setup-web.el")
 (load "setup-yasnippet.el")

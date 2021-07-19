@@ -18,7 +18,6 @@
     flycheck
     magit
     paredit
-    projectile
     rainbow-delimiters
     smex
     use-package
