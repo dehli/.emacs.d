@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: new-file
+# key: /file
+# --
+;;; ${1:`(file-name-nondirectory (buffer-file-name))`} --- ${2:Summary}
+;;
+;;; Commentary:
+;;  $3
+;;; Code:
+
+$0
+
+(provide '${1:$(file-name-sans-extension yas-text)})
+;;; $1 ends here
