@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: defmutation
+# key: pc/defmutation
+# --
+(pc/defmutation ${1:mutation-symbol}
+  [${2:env }${3:params}]
+  {::pc/output [$4]}
+  $0)

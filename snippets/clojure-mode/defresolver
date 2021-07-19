@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: defresolver
+# key: pc/defresolver
+# --
+(pc/defresolver ${1:resolver-symbol}
+  [${2:env }${3:input}]
+  $0)
