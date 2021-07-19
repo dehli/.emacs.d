@@ -9,7 +9,6 @@
 
 (defvar my-packages
   '(;; General packages
-    ag
     auto-complete
     company
     el-patch

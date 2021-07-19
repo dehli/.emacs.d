@@ -4,7 +4,6 @@
 ;;
 ;;; Code:
 
-(require 'ag)
 (require 'smex)
 (require 'vterm)
 
@@ -26,10 +25,6 @@
 
 ;; Ensure that you don't accidentally close emacs
 (setq confirm-kill-emacs 'y-or-n-p)
-
-(setq ag-arguments '("--hidden" "--smart-case" "--stats"))
-(setq ag-highlight-search t)
-(setq ag-reuse-window t)
 
 (provide 'miscellaneous)
 ;;; miscellaneous.el ends here

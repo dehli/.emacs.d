@@ -10,6 +10,7 @@
 (load "bootstrap-straight.el")
 (load "packages.el")
 
+(load "setup-ag.el")
 (load "setup-clojure.el")
 (load "setup-helm.el")
 (load "setup-hideshow.el")
