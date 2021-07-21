@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: random-uuid
+# key: random-uuid
+# --
+"`(uuidgen)`"

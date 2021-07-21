@@ -31,12 +31,6 @@
 
 (put 'erase-buffer 'disabled nil)
 
-(defun insert-random-uuid ()
-  "Insert a random uuid into the current buffer (credit to @oconn)."
-  (interactive)
-  (let ((uuid (shell-command-to-string "uuidgen")))
-    (insert "\"" (string-trim-right (downcase uuid)) "\"")))
-
 (setq backup-directory-alist `(("." . "~/.saves")))
 
 (provide 'editing)

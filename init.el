@@ -25,5 +25,6 @@
 (load "miscellaneous.el")
 (load "kyber.el")
 (load "ui.el")
+(load "utils.el")
 
 ;;; init.el ends here
