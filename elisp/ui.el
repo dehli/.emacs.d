@@ -73,5 +73,7 @@
 ;; On initial load, make sure it's maximized
 (toggle-frame-maximized)
 
+(global-set-key (kbd "C-=") #'ns-do-hide-emacs)
+
 (provide 'ui)
 ;;; ui.el ends here
