@@ -11,6 +11,7 @@
   '(;; General packages
     auto-complete
     company
+    dash
     el-patch
     esup
     exec-path-from-shell

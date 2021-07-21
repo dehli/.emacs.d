@@ -4,11 +4,14 @@
 ;;
 ;;; Code:
 
+(require 'dash)
+
 (defun uuidgen ()
   "Return a random uuid."
   (interactive)
-  (let ((uuid (shell-command-to-string "uuidgen")))
-    (string-trim-right (downcase uuid))))
+  (-> (shell-command-to-string "uuidgen")
+      downcase
+      string-trim-right))
 
 (provide 'utils)
 ;;; utils.el ends here
