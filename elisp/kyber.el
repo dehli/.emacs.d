@@ -8,11 +8,12 @@
 ;;; Code:
 
 (require 'cider)
+(require 'exec-path-from-shell)
 (require 'vterm)
 
 (defun kyber-path (path)
   "PATH is subfolder within KYBER_HOME."
-  (concat (getenv "KYBER_HOME") path))
+  (concat (exec-path-from-shell-copy-env "KYBER_HOME") path))
 
 (defun kyber-stack-name->aws-profile (stack-name)
   "Convert STACK-NAME to AWS-PROFILE."
