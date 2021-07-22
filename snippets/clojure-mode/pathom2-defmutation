@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: defmutation
-# key: pc/defmutation
+# name: pathom2-defmutation
+# key: pc/defm
 # --
 (pc/defmutation ${1:mutation-symbol}
   [${2:env }${3:params}]

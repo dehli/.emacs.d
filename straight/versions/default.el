@@ -8,6 +8,7 @@
  ("clojure-mode" . "3e426b3a479f479963f2c7d1147cc826ed1a0ee1")
  ("clojure-snippets" . "6068dca90467a0f4ebc2cd39338a173d6f5ddc04")
  ("company-mode" . "1372d4b0102ece1a3700f5157b918955ec6b0d3e")
+ ("crux" . "20c07848049716a0e1aa2560e23b5f4149f2a74f")
  ("dash.el" . "2675596b9ac1c4b9d47b93e227f06f8ec6755ec6")
  ("el-get" . "463f5e985fc53300f87ab7eb054d1738fc6ac93b")
  ("el-patch" . "14c35cee52b415fe9892440014c4b8dc045103df")

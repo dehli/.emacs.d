@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: defresolver
-# key: pc/defresolver
+# name: pathom2-defresolver
+# key: pc/defr
 # --
 (pc/defresolver ${1:resolver-symbol}
   [${2:env }${3:input}]

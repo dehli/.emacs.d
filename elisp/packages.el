@@ -11,6 +11,7 @@
   '(;; General packages
     auto-complete
     company
+    crux
     dash
     el-patch
     esup
