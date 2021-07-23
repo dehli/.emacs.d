@@ -53,9 +53,6 @@
 ;; full path in title bar
 (setq-default frame-title-format "%b (%f)")
 
-;; don't pop up font menu
-(global-set-key (kbd "s-t") '(lambda () (interactive)))
-
 ;; no bell
 (setq ring-bell-function 'ignore)
 
@@ -69,6 +66,9 @@
 
 ;; Show column number
 (column-number-mode 1)
+
+;; Occasionally, emacs won't take up full screen unless this is enabled
+(setq frame-resize-pixelwise t)
 
 ;; On initial load, make sure it's maximized
 (toggle-frame-maximized)
