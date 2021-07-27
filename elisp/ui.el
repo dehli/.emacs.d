@@ -5,6 +5,8 @@
 
 ;;; Code:
 
+(require 'use-package)
+
 ;; Turn off the menu bar at the top of each frame because it's distracting
 (menu-bar-mode -1)
 
@@ -19,7 +21,8 @@
   (scroll-bar-mode -1))
 
 ;; Color Theme
-(load-theme 'wombat t)
+(use-package solarized-theme)
+(load-theme 'solarized-dark t)
 
 ;; Set font size
 (set-face-attribute 'default nil :height 120)
