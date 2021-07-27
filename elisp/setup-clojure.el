@@ -38,6 +38,7 @@
 (add-hook 'cider-repl-mode-hook 'enable-paredit-mode)
 
 ;; Setup rainbow delimiters
+(require 'rainbow-delimiters)
 (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
 
 (provide 'setup-clojure)

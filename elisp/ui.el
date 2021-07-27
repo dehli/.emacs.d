@@ -25,7 +25,7 @@
 (load-theme 'solarized-dark t)
 
 ;; Set font size
-(set-face-attribute 'default nil :height 120)
+(set-face-attribute 'default nil :height 140)
 
 ;; Set default font
 (when (window-system)
