@@ -17,7 +17,6 @@ brew install emacs-plus@28 --with-no-titlebar --with-xwidgets
 
 - `clj-kondo` must be on your `$PATH`
 - `brew install ag` (for searching)
-- `brew install pandoc` (for Markdown mode)
 
 ## Using Straight
 
