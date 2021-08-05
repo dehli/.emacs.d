@@ -1,3 +1,5 @@
+.cache/
+.lsp-session*
 .smex-items
 *~
 places
@@ -23,3 +25,4 @@ straight/build-cache.el
 straight/modified
 straight/repos
 projects
+workspace/
