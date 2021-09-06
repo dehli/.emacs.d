@@ -22,7 +22,6 @@
     rainbow-delimiters
     smex
     use-package
-    vterm
     yaml-mode))
 
 (dolist (p my-packages)

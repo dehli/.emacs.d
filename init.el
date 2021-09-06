@@ -19,6 +19,7 @@
 (load "setup-projectile.el")
 (load "setup-slack.el")
 (load "setup-web.el")
+(load "setup-vterm.el")
 (load "setup-yasnippet.el")
 
 (load "clipboard.el")

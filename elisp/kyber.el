@@ -9,6 +9,7 @@
 
 (require 'cider)
 (require 'exec-path-from-shell)
+(require 'multi-vterm)
 (require 'vterm)
 
 (defun kyber-path (path)
@@ -29,7 +30,7 @@
         (connect-parser (ido-completing-read
                          "Pathom Viz:" '("false" "true"))))
 
-    (vterm)
+    (multi-vterm)
 
     ;; Env vars are sent separately so that you can kill the node process
     ;; and easily make changes to an individual variable if you wanted to.
