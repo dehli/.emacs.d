@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: new-file
-# key: /file
+# key: ;;;
 # --
 ;;; ${1:`(file-name-nondirectory (buffer-file-name))`} --- ${2:Summary}
 ;;
