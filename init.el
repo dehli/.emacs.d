@@ -12,6 +12,7 @@
 
 (load "setup-ag.el")
 (load "setup-clojure.el")
+(load "setup-env.el")
 (load "setup-lsp.el")
 (load "setup-helm.el")
 (load "setup-hideshow.el")

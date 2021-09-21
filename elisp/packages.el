@@ -15,7 +15,6 @@
     dash
     el-patch
     esup
-    exec-path-from-shell
     flycheck
     magit
     paredit
@@ -28,10 +27,6 @@
   (straight-use-package p))
 
 (setq straight-use-package-by-default t)
-
-(require 'exec-path-from-shell)
-(when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
 
 (provide 'packages)
 ;;; packages.el ends here
