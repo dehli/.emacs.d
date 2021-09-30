@@ -49,7 +49,8 @@
   (setq cider-offer-to-open-cljs-app-in-browser nil)
   (setq cider-preferred-build-tool 'shadow-cljs)
   (setq cider-repl-display-help-banner nil)
-  (setq cider-shadow-default-options "server-dev -A:test")
+  (setq cider-shadow-default-options "server-dev")
+  (setq cider-shadow-cljs-parameters "server -A:test")
   (cider-jack-in-cljs `(:cljs-repl-type shadow
                         :project-dir ,(kyber-path "/server")))
 
