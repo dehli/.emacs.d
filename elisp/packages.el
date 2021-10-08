@@ -18,6 +18,7 @@
     flycheck
     magit
     paredit
+    pass
     rainbow-delimiters
     smex
     use-package
