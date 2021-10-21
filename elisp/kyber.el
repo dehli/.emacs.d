@@ -24,6 +24,7 @@
 
 (defun kyber-connect-node ()
   "Start vterm process and connect to KYBER."
+  (interactive)
   (let ((stack-name (ido-completing-read
                      "Stack Name:" '("cp-dev" "kyber-development" "kyber-staging")))
 
