@@ -23,6 +23,7 @@
   :init
   (setq cider-repl-history-file "~/.emacs.d/cider-history")
   (setq cider-repl-wrap-history t)
+  (setq cider-annotate-completion-candidates nil)
   (add-hook 'cider-mode-hook 'eldoc-mode))
 
 (use-package clj-refactor
