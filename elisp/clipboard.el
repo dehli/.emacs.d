@@ -8,18 +8,18 @@
 
 (require 'paredit)
 
-(defvar copy-cmd
-  (if (eq system-type 'darwin)
-      "pbcopy"
-    "xsel -i -b"))
+(defun shell-copy-command (txt)
+  "Send TXT to the OS's clipboard."
+  (shell-command
+   (format (if (eq system-type 'darwin)
+               "echo %s | pbcopy"
+             "echo %s | wl-copy -n &>/dev/null")
+           (shell-quote-argument txt))))
 
 (defun copy-kill-ring ()
-  "Execute `copy-cmd` with the most recent value in `kill-ring`."
-  (shell-command (format "echo %s | %s"
-                         (shell-quote-argument
-                          (substring-no-properties
-                           (car kill-ring)))
-                         copy-cmd)))
+  "Execute `shell-copy-command` with the most recent value in `kill-ring`."
+  (shell-copy-command (substring-no-properties
+                       (car kill-ring))))
 
 (defun kill-line-copy ()
   "Call `kill-line` and copy its content."
