@@ -19,6 +19,7 @@
     magit
     paredit
     pass
+    project
     rainbow-delimiters
     smex
     use-package
