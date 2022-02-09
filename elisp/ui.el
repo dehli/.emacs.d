@@ -59,9 +59,6 @@
 ;; no bell
 (setq ring-bell-function 'ignore)
 
-;; Lambda symbol
-(global-prettify-symbols-mode 1)
-
 ;; This is used for using mouse in terminal mode
 (xterm-mouse-mode 1)
 (global-set-key [mouse-4] 'scroll-down-line)
