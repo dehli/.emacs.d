@@ -1,4 +1,4 @@
-;;; kyber.el -- Customizations related to the Kyber project.
+;;; kyber.el -- Customizations related to various projects.
 ;;
 ;;; Commentary:
 ;;
@@ -58,6 +58,14 @@
   ;; Give shadow enough time to compile. Ideally this would be triggered
   ;; from an event, but I haven't learned enough about emacs/cider.
   (run-at-time "30 sec" nil #'kyber-connect-node))
+
+(defun why-jack-in ()
+  "This function opens the why project."
+  (interactive)
+  (cider-connect-cljs `(:cljs-repl-type shadow-select
+                        :host "localhost"
+                        :project-dir ,(exec-path-from-shell-copy-env "WHY_HOME")
+                        :port 8777)))
 
 (provide 'kyber)
 ;;; kyber.el ends here
