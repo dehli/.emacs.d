@@ -14,13 +14,18 @@
     crux
     dash
     el-patch
+    emacsql
+    emacsql-sqlite
     esup
+    f
     flycheck
     magit
+    magit-section
     paredit
     pass
     project
     rainbow-delimiters
+    s
     smex
     use-package
     yaml-mode))
