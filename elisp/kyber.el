@@ -16,12 +16,6 @@
   "PATH is subfolder within KYBER_HOME."
   (concat (exec-path-from-shell-copy-env "KYBER_HOME") path))
 
-(defun kyber-stack-name->aws-profile (stack-name)
-  "Convert STACK-NAME to AWS-PROFILE."
-  (if (string= stack-name "cp-dev")
-      "arcx-cp"
-    "arcx-dev"))
-
 (defun kyber-connect-node ()
   "Start vterm process and connect to KYBER."
   (interactive)
@@ -35,7 +29,15 @@
 
     ;; Env vars are sent separately so that you can kill the node process
     ;; and easily make changes to an individual variable if you wanted to.
-    (vterm-send-string (concat "export AWS_PROFILE=" (kyber-stack-name->aws-profile stack-name)))
+    (vterm-send-string "export AWS_PROFILE=arcx")
+    (vterm-send-return)
+    (vterm-send-string "set -a")
+    (vterm-send-return)
+    (vterm-send-string (concat "eval $(kyber.clj assume-role --stack-name " stack-name " eql-lambda)"))
+    (vterm-send-return)
+    (vterm-send-string (concat "eval $(kyber.clj load-lambda-env " stack-name "-EqlRoute)"))
+    (vterm-send-return)
+    (vterm-send-string "set +a")
     (vterm-send-return)
     (vterm-send-string (concat "export STACK_NAME=" stack-name))
     (vterm-send-return)
