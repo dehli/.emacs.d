@@ -25,5 +25,9 @@ straight/build-cache.el
 straight/modified
 straight/repos
 projects
-workspace/
+/eshell
+/workspace/
+/.org-id-locations
+/bookmarks
+/org-roam.db
 /tutorial/
