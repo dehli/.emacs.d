@@ -29,5 +29,6 @@ projects
 /workspace/
 /.org-id-locations
 /bookmarks
+/org-persist
 /org-roam.db
 /tutorial/
