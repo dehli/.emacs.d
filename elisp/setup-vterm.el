@@ -8,7 +8,9 @@
 
 (use-package vterm)
 
-(use-package multi-vterm)
+(use-package multi-vterm
+  :bind
+  (("C-c v" . multi-vterm)))
 
 (require 'vterm)
 (defun vterm-send-quit-emacs ()
