@@ -5,6 +5,7 @@
 ;;; Code:
 
 (require 'dash)
+(require 'magit)
 (require 'use-package)
 
 (use-package org)
@@ -34,7 +35,8 @@
   (interactive)
   (-> (org-roam-node-from-title-or-alias "TODO")
       org-roam-buffer-display-dedicated
-      select-window))
+      select-window)
+  (magit-section-show-level-2))
 
 (provide 'setup-org-mode)
 ;;; setup-org-mode.el ends here
