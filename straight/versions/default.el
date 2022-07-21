@@ -43,7 +43,7 @@
  ("multi-vterm" . "a3df7218c1ecadef779e2c47815201052283f9ea")
  ("multiple-cursors.el" . "225fc0e889e094bfd2913cfd448084cb49211ac6")
  ("oauth2" . "8e850bc14ab4b9253e37c7333dd08e8eda0c9620")
- ("org" . "99681ce38937ba993a0407cee4fd6a7f869211bf")
+ ("org" . "2d52741088a7266f2b3299b502109185bd45dd35")
  ("org-roam" . "b163c900b8ec2e3637bc251d9b90421efc771c02")
  ("paredit" . "d0b1a2f42fb47efc8392763d6487fd027e3a2955")
  ("parseclj" . "4d0e780e00f1828b00c43099e6eebc6582998f72")
