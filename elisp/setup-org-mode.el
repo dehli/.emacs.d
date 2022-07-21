@@ -38,5 +38,19 @@
       select-window)
   (magit-section-show-level-2))
 
+(defun org-roam-git (cmd)
+  "Execute `git CMD` from the org-roam repo."
+  (shell-command
+   (format "cd %s && git %s"
+           org-roam-directory
+           cmd)))
+
+(defun org-roam-git-add-commit-push ()
+  "Add files, commit them, and then push to org-roam repo."
+  (interactive)
+  (org-roam-git "add ./**/*.org")
+  (org-roam-git "commit -m 'Add notes using emacs.'")
+  (org-roam-git "push"))
+
 (provide 'setup-org-mode)
 ;;; setup-org-mode.el ends here

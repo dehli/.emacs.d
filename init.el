@@ -25,6 +25,7 @@
 (load "setup-helm.el")
 (load "setup-hideshow.el")
 (load "setup-ido.el")
+(load "setup-midnight.el")
 (load "setup-org-mode.el")
 (load "setup-projectile.el")
 (load "setup-slack.el")
