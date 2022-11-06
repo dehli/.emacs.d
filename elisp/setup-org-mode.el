@@ -40,10 +40,9 @@
 
 (defun org-roam-git (cmd)
   "Execute `git CMD` from the org-roam repo."
-  (shell-command
-   (format "cd %s && git %s"
-           org-roam-directory
-           cmd)))
+  (let ((default-directory org-roam-directory))
+    (shell-command
+     (format "git %s" cmd))))
 
 (defun org-roam-git-add-commit-push ()
   "Add files, commit them, and then push to org-roam repo."
