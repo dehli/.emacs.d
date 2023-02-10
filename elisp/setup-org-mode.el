@@ -51,5 +51,10 @@
   (org-roam-git "commit -m 'Add notes using emacs.'")
   (org-roam-git "push"))
 
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((emacs-lisp . t)
+   (python . t)))
+
 (provide 'setup-org-mode)
 ;;; setup-org-mode.el ends here
