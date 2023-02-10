@@ -14,7 +14,8 @@
   ("C-c p" . projectile-command-map)
 
   :config
-  (projectile-mode t))
+  (projectile-mode t)
+  (setq projectile-create-missing-test-files t))
 
 (provide 'setup-projectile)
 ;;; setup-projectile.el ends here
