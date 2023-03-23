@@ -54,7 +54,9 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((emacs-lisp . t)
-   (python . t)))
+   (python . t)
+   (shell . t)
+   (sql . t)))
 
 (provide 'setup-org-mode)
 ;;; setup-org-mode.el ends here
