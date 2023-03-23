@@ -11,9 +11,6 @@
   :bind
   (("M-x" . 'helm-M-x))
 
-  :preface
-  (require 'helm-config)
-
   :config
   (helm-mode 1))
 
