@@ -19,5 +19,8 @@
   (vterm-send-C-x)
   (vterm-send-C-c))
 
+;; https://github.com/akermu/emacs-libvterm/issues/229#issuecomment-581890892
+(setq-default line-spacing 3)
+
 (provide 'setup-vterm)
 ;;; setup-vterm.el ends here
