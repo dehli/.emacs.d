@@ -65,7 +65,7 @@
  ("smex" . "55aaebe3d793c2c990b39a302eb26c184281c42c")
  ("solarized-emacs" . "94e7c342da1b04326028708e5503973d554bd828")
  ("spinner" . "634529bb3173e09b37499f636de70abf29d9fa8a")
- ("straight.el" . "f21103d97d180fba0b6e2e86ebb0b6269219ef2c")
+ ("straight.el" . "039e5c9a9b5c00749602afb41341e9e77ba09429")
  ("tide" . "4cf6a0d89da7f946565a425a632ee2410a40c7da")
  ("transient" . "0ae0de43590b5b6984a83f9e044e7c426455ac6e")
  ("typescript.el" . "d79551c67ff5f2bd5f651eb411cdc66ceeb787e3")
