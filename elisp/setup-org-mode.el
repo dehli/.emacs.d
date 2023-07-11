@@ -19,6 +19,7 @@
    ("C-c n c" . org-roam-capture)
 
    ("C-c n j" . org-roam-dailies-capture-today)
+   ("C-c n n" . org-roam-dailies-goto-today)
    ("C-c n t" . #'org-roam-display-todo))
 
   :commands
@@ -53,7 +54,8 @@
 
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((emacs-lisp . t)
+ '((clojure . t)
+   (emacs-lisp . t)
    (python . t)
    (shell . t)
    (sql . t)))
