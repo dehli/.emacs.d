@@ -8,6 +8,7 @@
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 
 (load "bootstrap-straight.el")
+(straight-use-package 'org)
 
 (load "packages.el")
 
