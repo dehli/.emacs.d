@@ -1,5 +1,6 @@
 *~
 /.cache/
+/.lsp-session*
 /.smex-items
 /auto-save-list/
 /eln-cache/
@@ -7,9 +8,11 @@
 /org-persist/
 /org-roam.db
 /projectile-bookmarks.eld
+/projects
 /recentf
 /straight/build-cache.el
 /straight/build/
 /straight/repos/
 /transient/
 /url/
+/workspace/
