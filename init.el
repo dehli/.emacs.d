@@ -13,6 +13,7 @@
 (load "packages.el")
 
 (load "setup-ag.el")
+(load "setup-blockchain.el")
 (load "setup-clojure.el")
 (load "setup-env.el")
 (load "setup-lsp.el")

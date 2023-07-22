@@ -3,6 +3,7 @@
 /.lsp-session*
 /.smex-items
 /auto-save-list/
+/cider-history
 /eln-cache/
 /ido.last
 /org-persist/
@@ -14,5 +15,6 @@
 /straight/build/
 /straight/repos/
 /transient/
+/tree-sitter/
 /url/
 /workspace/

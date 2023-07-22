@@ -27,6 +27,7 @@
     rainbow-delimiters
     s
     smex
+    treesit-auto
     use-package
     yaml-mode))
 
@@ -34,6 +35,11 @@
   (straight-use-package p))
 
 (setq straight-use-package-by-default t)
+
+(use-package treesit-auto
+  :config
+  (global-treesit-auto-mode))
+
 
 (provide 'packages)
 ;;; packages.el ends here
