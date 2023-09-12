@@ -13,10 +13,13 @@
               (cljr-add-keybindings-with-prefix "C-c C-m")))
   :config
   (put-clojure-indent 'async 1)
-  (put-clojure-indent 'go-try 0)
   (put-clojure-indent '>defn- 1)
   (put-clojure-indent '>defn 1)
-  (put-clojure-indent '>def 1))
+  (put-clojure-indent '>def 1)
+  (put-clojure-indent 'reg-event-db 1)
+  (put-clojure-indent 'reg-event-fx 1)
+  (put-clojure-indent 'reg-fx 1)
+  (put-clojure-indent 'reg-sub 1))
 
 (use-package cider
   :after (clojure-mode)
