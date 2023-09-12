@@ -4,8 +4,6 @@
 ;;
 ;;; Code:
 
-(require 'use-package)
-
 (use-package vterm)
 
 (use-package multi-vterm
@@ -16,11 +14,8 @@
 (defun vterm-send-quit-emacs ()
   "Quit Emacs from within vterm."
   (interactive)
-  (vterm-send-C-x)
-  (vterm-send-C-c))
-
-;; https://github.com/akermu/emacs-libvterm/issues/229#issuecomment-581890892
-(setq-default line-spacing 3)
+  (vterm-send "C-x")
+  (vterm-send "C-c"))
 
 (provide 'setup-vterm)
 ;;; setup-vterm.el ends here
