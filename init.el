@@ -35,4 +35,6 @@
 (load "ui.el")
 (load "utils.el")
 
+(setq custom-file "~/.emacs.d/custom.el")
+
 ;;; init.el ends here

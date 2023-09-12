@@ -4,6 +4,7 @@
 /.smex-items
 /auto-save-list/
 /cider-history
+/custom.el
 /eln-cache/
 /ido.last
 /org-persist/
