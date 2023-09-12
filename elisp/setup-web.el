@@ -31,12 +31,15 @@
 (add-hook 'typescript-mode-hook #'setup-tide-mode)
 (setq js-indent-level 2)
 (setq company-tooltip-align-annotations t)
-(add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
+
+(add-to-list 'auto-mode-alist '("\\.\\(mts\\|tsx\\)\\'" . web-mode))
 
 (add-hook 'web-mode-hook
           (lambda ()
-            (when (string-equal "tsx" (file-name-extension buffer-file-name))
-              (setup-tide-mode))))
+            (let ((ext (file-name-extension buffer-file-name)))
+              (when (or (string-equal "tsx" ext)
+                        (string-equal "mts" ext))
+                (setup-tide-mode)))))
 
 (provide 'setup-web)
 ;;; setup-web.el ends here

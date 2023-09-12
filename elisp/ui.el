@@ -31,6 +31,8 @@
 (when (window-system)
   (set-frame-font "Fira Code"))
 
+(set-frame-parameter nil 'internal-border-width 10)
+
 (setq ;; makes killing/yanking interact with the clipboard
  select-enable-clipboard t
 
