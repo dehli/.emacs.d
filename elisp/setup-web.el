@@ -5,7 +5,7 @@
 
 ;;; Code:
 
-(require 'use-package)
+(require 'dash)
 
 (use-package tide
   :init
@@ -32,13 +32,12 @@
 (setq js-indent-level 2)
 (setq company-tooltip-align-annotations t)
 
-(add-to-list 'auto-mode-alist '("\\.\\(mts\\|tsx\\)\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.\\(ts\\|mts\\|tsx\\)\\'" . web-mode))
 
 (add-hook 'web-mode-hook
           (lambda ()
             (let ((ext (file-name-extension buffer-file-name)))
-              (when (or (string-equal "tsx" ext)
-                        (string-equal "mts" ext))
+              (when (-contains? '("ts" "tsx" "mts") ext)
                 (setup-tide-mode)))))
 
 (provide 'setup-web)
