@@ -13,6 +13,7 @@
          (typescript-ts-mode . lsp))
   :init
   (setq gc-cons-threshold (* 100 1024 1024)
+        lsp-enable-indentation nil
         read-process-output-max (* 1024 1024)))
 
 (provide 'setup-lsp)

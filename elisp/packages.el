@@ -40,6 +40,5 @@
   :config
   (global-treesit-auto-mode))
 
-
 (provide 'packages)
 ;;; packages.el ends here
