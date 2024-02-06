@@ -28,7 +28,7 @@
 (set-face-attribute 'default nil :height 140)
 
 ;; Set default font
-(when (window-system)
+(when (member "Fira Code" (font-family-list))
   (set-frame-font "Fira Code"))
 
 (set-frame-parameter nil 'internal-border-width 10)
