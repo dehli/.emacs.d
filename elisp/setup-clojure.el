@@ -19,7 +19,8 @@
   (put-clojure-indent 'reg-event-db 1)
   (put-clojure-indent 'reg-event-fx 1)
   (put-clojure-indent 'reg-fx 1)
-  (put-clojure-indent 'reg-sub 1))
+  (put-clojure-indent 'reg-sub 1)
+  (put-clojure-indent 'fnc 1))
 
 (use-package cider
   :after (clojure-mode)
