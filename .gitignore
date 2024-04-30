@@ -1,6 +1,7 @@
 *~
 /.cache/
 /.lsp-session*
+/.org-id-locations
 /.smex-items
 /auto-save-list/
 /cider-history
