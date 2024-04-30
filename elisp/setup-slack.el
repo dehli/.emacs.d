@@ -8,7 +8,6 @@
 ;;; Code:
 
 (require 'exec-path-from-shell)
-(require 'use-package)
 
 (use-package slack
   :commands (slack-start slack-register-team)

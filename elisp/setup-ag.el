@@ -5,8 +5,6 @@
 ;;
 ;;; Code:
 
-(require 'use-package)
-
 (use-package ag
   :config
   (setq ag-arguments '("--hidden" "--smart-case" "--stats"))

@@ -2,8 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 
-(require 'use-package)
-
 (use-package hideshow-org
   :commands (hs-org/minor-mode hs-hide-all)
   :hook ((prog-mode . (lambda ()

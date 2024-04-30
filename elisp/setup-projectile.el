@@ -4,8 +4,6 @@
 ;;
 ;;; Code:
 
-(require 'use-package)
-
 (use-package projectile
   :commands
   (projectile-mode)

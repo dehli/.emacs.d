@@ -2,8 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 
-(require 'use-package)
-
 (use-package clojure-mode
   :init
   (add-hook 'clojure-mode-hook

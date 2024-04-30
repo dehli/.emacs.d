@@ -6,8 +6,6 @@
 ;;
 ;;; Code:
 
-(require 'use-package)
-
 (use-package yasnippet
   :commands (yas-reload-all)
   :hook ((prog-mode . yas-minor-mode))

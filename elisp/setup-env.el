@@ -4,8 +4,6 @@
 ;;
 ;;; Code:
 
-(require 'use-package)
-
 (use-package exec-path-from-shell)
 
 (require 'exec-path-from-shell)

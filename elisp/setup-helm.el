@@ -2,8 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 
-(require 'use-package)
-
 (use-package helm
   :init
   (setq helm-split-window-inside-p t)

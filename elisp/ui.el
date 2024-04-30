@@ -5,8 +5,6 @@
 
 ;;; Code:
 
-(require 'use-package)
-
 ;; Turn off the menu bar at the top of each frame because it's distracting
 (menu-bar-mode -1)
 

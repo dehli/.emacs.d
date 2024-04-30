@@ -6,7 +6,6 @@
 
 (require 'dash)
 (require 'magit)
-(require 'use-package)
 
 (use-package org)
 

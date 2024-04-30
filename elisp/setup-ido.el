@@ -7,7 +7,6 @@
 ;;; Code:
 
 (require 'ido)
-(require 'use-package)
 
 (ido-mode 1)
 

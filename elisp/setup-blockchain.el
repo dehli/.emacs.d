@@ -5,8 +5,6 @@
 
 ;;; Code:
 
-(require 'use-package)
-
 (use-package solidity-mode)
 
 ;;; setup-blockchain.el ends here
