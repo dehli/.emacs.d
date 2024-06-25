@@ -38,18 +38,13 @@
       select-window)
   (magit-section-show-level-2))
 
-(defun org-roam-git (cmd)
-  "Execute `git CMD` from the org-roam repo."
-  (let ((default-directory org-roam-directory))
-    (shell-command
-     (format "git %s" cmd))))
-
 (defun org-roam-git-add-commit-push ()
   "Add files, commit them, and then push to org-roam repo."
   (interactive)
-  (org-roam-git "add ./**/*.org")
-  (org-roam-git "commit -m 'Add notes using emacs.'")
-  (org-roam-git "push"))
+  (let ((default-directory org-roam-directory))
+    (shell-command "git add ./**/*.org")
+    (shell-command "git commit -m 'Add notes using emacs.'")
+    (shell-command "timeout 5s git push")))
 
 (org-babel-do-load-languages
  'org-babel-load-languages
