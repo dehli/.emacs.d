@@ -14,6 +14,7 @@
   "This function opens the why project."
   (interactive)
   (setq cider-shadow-default-options "services-dev")
+  (setq cider-shadow-cljs-parameters "server -A:node-test")
   (cider-connect-cljs `(:cljs-repl-type shadow-select
                         :host "localhost"
                         :project-dir ,(exec-path-from-shell-copy-env "WHY_HOME")
