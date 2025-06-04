@@ -15,7 +15,6 @@
     dash
     el-patch
     emacsql
-    emacsql-sqlite
     esup
     f
     flycheck

@@ -50,6 +50,7 @@
  'org-babel-load-languages
  '((clojure . t)
    (emacs-lisp . t)
+   (js . t)
    (python . t)
    (shell . t)
    (sql . t)))

@@ -10,6 +10,12 @@
 (require 'multi-vterm)
 (require 'vterm)
 
+;; Limit scrollback to prevent memory issues
+(setq vterm-max-scrollback-lines 5000)
+
+;; Clear scrollback automatically when it gets too large
+(setq vterm-clear-scrollback-when-clearing t)
+
 (defun vterm-send-quit-emacs ()
   "Quit Emacs from within vterm."
   (interactive)
