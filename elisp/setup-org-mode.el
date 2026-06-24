@@ -25,6 +25,7 @@
   (org-roam-db-autosync-enable)
 
   :config
+  (setq org-roam-directory "~/home/notes/")
   (org-roam-db-autosync-enable))
 
 (require 'org-roam-mode)
